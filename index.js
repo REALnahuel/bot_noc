@@ -1,4 +1,4 @@
-console.log('Quien te conoce papa?!');
+﻿console.log('Quien te conoce papa?!');
 const Discord = require ('discord.js');
 const bot = new Discord.Client();
 var Twit = require('twit')
@@ -130,19 +130,7 @@ bot.on('message',(message) => {
 			value = message.content.substring(6);
 			message.channel.send('https://es.wikipedia.org/wiki/' + value );
 		}
-//  }else if (message.content.substring(0, 7) == '!gtweet') {
-//    if (message.content.substring(7) == ''){
-//			message.channel.send('Que buscas capo?');
-//		}else{
-//      var param = { q: message.content.substring(7), count: 5}
-//      T.get('search/tweets',param, gotData);
-//      function gotData(err,data,response){
-//        var tweets = data.statuses;
-//        for (var i = 0; i < tweets.lenght; i++){
-//          console.log(tweets[i].text);
-//        }
-//      }
-//    }
+
 	}else if (message.content.substring(0, 6) == '!tweet') {
 		if (message.content.substring(7) == ''){
 			message.channel.send('Que vas a publicar capo?');
